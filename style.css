@@ -16,6 +16,7 @@ body {
 	font-family: droidserif, sans-serif;
 }
 a {
+	cursor: pointer;
 	text-decoration: none;
 }
 a:link {
@@ -61,10 +62,7 @@ a:active {
 	display: inline;
 	margin-right: 36px;
 }
-.head-right .a-current:link {
-	color: #60d0d4;
-}
-.head-right .a-current:visited {
+.head-right .a-current {
 	color: #60d0d4;
 }
 .head-right .a-current:hover {
@@ -78,7 +76,7 @@ a:active {
 	margin: 0px auto;
 	min-height: 400px;
 	position: relative;
-	transition: height 1s;
+	transition: height 0.5s;
 	width: 1000px;
 }
 .main-container,
@@ -111,6 +109,8 @@ a:active {
 .contacts-one {
 	padding: 30px 0px 0px 0px;
 	text-align: justify;
+}
+.about-one {
 	text-indent: 3em;
 }
 .about-one a {
@@ -121,6 +121,7 @@ a:active {
 	#background-color: lightgrey;
 	box-sizing: border-box;
 	float: left;
+	height: 400px;
 	padding: 10px 0px 0px 30px;
 	text-align: justify;
 	width: 64%;

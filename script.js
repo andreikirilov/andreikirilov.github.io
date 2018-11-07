@@ -28,32 +28,9 @@ switch(months) {
 	default:
 		date += months + ' месяцев';
 		break;
-	
 }
 document.getElementById('date').innerHTML = date;
-
-var activateContent = function (contents, activeElement) {
-	for (var i = 0; i < contents.length; i++) {
-		var currentElement = document.querySelector('.' + contents[i] + '-container');
-		if (contents[i] == activeElement) {
-			currentElement.style.opacity = 1;
-			currentElement.style.visibility = 'visible';
-			document.querySelector('.content-container').style.height = currentElement.offsetHeight + 'px';
-		} else {
-			currentElement.style.opacity = 0;
-			currentElement.style.visibility = 'hidden';
-		}
-	}
-};
-var contents = ['main', 'exp', 'about', 'contacts'];
-var currentElement = window.location.href.split('#')[1];
-if (currentElement != null) {
-	document.querySelector('.a-current').classList.remove('a-current');
-	document.querySelector('a[href="#' + currentElement + '"]').classList.add('a-current');
-	activateContent(contents, currentElement);
-} else {
-	activateContent(contents, contents[0]);
-}
+document.querySelector('.content-container').style.height = document.querySelector('.main-container').offsetHeight + 'px';
 
 var setVisibility = function(elementName, isVisible) {
 	var currentElement = document.querySelector('.' + elementName + '-container');
@@ -66,14 +43,70 @@ var setVisibility = function(elementName, isVisible) {
 		currentElement.style.visibility = 'hidden';
 	}
 }
-var headRightPath = '.head-container .head-right ';
-var inputs = document.querySelectorAll(headRightPath + 'a');
+var inputs = document.querySelectorAll('.head-right a');
 for (i = 0; i < inputs.length; i++) {
 	inputs[i].addEventListener('click', function() {
-		var aCurrentLast = document.querySelector(headRightPath + '.a-current');
+		var aCurrentLast = document.querySelector('.a-current');
 		aCurrentLast.classList.remove('a-current');
+		setVisibility(aCurrentLast.id, false);
 		this.classList.add('a-current');
-		setVisibility(aCurrentLast.href.split('#')[1], false);
-		setVisibility(this.href.split('#')[1], true);
-	});
+		setVisibility(this.id, true);
+	}, false);
 }
+
+/*var xDown, yDown;
+function handleTouchStart(evt) {
+    xDown = evt.touches[0].clientX;
+    yDown = evt.touches[0].clientY;
+};
+function handleTouchMove(evt) {
+    if (!xDown || !yDown ) {
+        return;
+    }
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+		var aCurrentLast = document.querySelector('.a-current');
+        if (xDiff > 0 && aCurrentLast.id != 'contacts') {
+			aCurrentLast.classList.remove('a-current');
+			setVisibility(aCurrentLast.id, false);
+			var newElement;
+			switch (aCurrentLast.id) {
+				case 'main':
+					newElement = document.getElementById('exp');
+					break;
+				case 'exp':
+					newElement = document.getElementById('about');
+					break;
+				case 'about':
+					newElement = document.getElementById('contacts');
+					break;
+			}
+			newElement.classList.add('a-current');
+			setVisibility(newElement.id, true);
+        } else if (xDiff < 0 && aCurrentLast.id != 'main') {
+			setVisibility(aCurrentLast.id, false);
+			aCurrentLast.classList.remove('a-current');
+			var newElement;
+			switch (aCurrentLast.id) {
+				case 'contacts':
+					newElement = document.getElementById('about');
+					break;
+				case 'about':
+					newElement = document.getElementById('exp');
+					break;
+				case 'exp':
+					newElement = document.getElementById('main');
+					break;
+			}
+			newElement.classList.add('a-current');
+			setVisibility(newElement.id, true);
+        }
+    }
+    xDown = null;
+    yDown = null;
+};
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);*/
