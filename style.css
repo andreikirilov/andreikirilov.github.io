@@ -83,7 +83,6 @@ a:active {
 .exp-container,
 .about-container,
 .contacts-container {
-	height: 600px;
 	opacity: 0;
 	position: absolute;
 	transition: opacity 1s;
@@ -93,9 +92,6 @@ a:active {
 	height: 400px;
 	opacity: 1;
 	visibility: visible;
-}
-.exp-container {
-	height: 650px;
 }
 .main-left,
 .exp-left {
@@ -121,7 +117,6 @@ a:active {
 	#background-color: lightgrey;
 	box-sizing: border-box;
 	float: left;
-	height: 400px;
 	padding: 10px 0px 0px 30px;
 	text-align: justify;
 	width: 64%;
