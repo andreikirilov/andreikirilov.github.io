@@ -1,7 +1,8 @@
 var currentDate = new Date();
 var inputDate = new Date(2017, 7, 4);
-var years = currentDate.getFullYear() - inputDate.getFullYear();
-var months = currentDate.getMonth() - inputDate.getMonth();
+var dateDif = new Date(currentDate - inputDate);
+years = dateDif.getFullYear() - 1970;
+months = dateDif.getMonth();
 var date = 'Всего: ';
 switch (years) {
 	case 1:
