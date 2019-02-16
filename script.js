@@ -54,6 +54,14 @@ for (i = 0; i < inputs.length; i++) {
 		setVisibility(this.id, true);
 	}, false);
 }
+var footerCopyright = document.querySelector('.footer-copyright');
+footerCopyright.addEventListener('click', function (evt) {
+	evt.preventDefault();
+	var assessment = parseInt(prompt("Как вам сайт по шкале от 0 до 10?", ""));
+	if (assessment >= 0 && assessment <= 10) {
+		alert ("Благодарю за вашу субъективную оценку: " + assessment + "!");
+	}
+});
 
 /*var xDown, yDown;
 function handleTouchStart(evt) {

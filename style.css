@@ -26,10 +26,16 @@ a:visited {
 	color: #4f4f4d;
 }
 a:hover {
+	border-bottom: 2px #e83555 solid;
 	color: #e83555;
+	opacity: 0.8;
 }
 a:active {
-	color: #60d0d4;
+	color: #e83555;
+	opacity: 0.4;
+}
+img {
+	border-radius: 50%;
 }
 .head-container {
 	margin: 100px auto 0px auto;
@@ -63,13 +69,7 @@ a:active {
 	margin-right: 36px;
 }
 .head-right .a-current {
-	color: #60d0d4;
-}
-.head-right .a-current:hover {
 	color: #e83555;
-}
-.head-right .a-current:active {
-	color: #60d0d4;
 }
 .content-container {
 	line-height: 2.5em;
@@ -96,6 +96,7 @@ a:active {
 .main-left,
 .exp-left {
 	#background-color: lightblue;
+	filter: grayscale(100%);
 	box-sizing: border-box;
 	float: left;
 	padding: 30px 0px 0px 0px;
@@ -131,17 +132,24 @@ a:active {
 }
 .footer {
 	background-color:#e83555;
-	color: #60d0d4;
+	border-radius: 0px 0px 25px 25px;
+	color: white;
 	display: table;
-	height: 70px;
+	height: 60px;
 	margin: 0px auto 100px auto;
 	width: 1000px;
 }
 .footer a {
 	#border: 1px solid black;
+	border: 0px;
+	color: white;
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+}
+.footer a:hover div:nth-child(2n){
+	border-bottom: 2px white solid;
+	margin-bottom: -2px;
 }
 .footer a div {
 	display: inline-block;
@@ -149,65 +157,24 @@ a:active {
 }
 .footer a .footer-img {
 	background: url("imgs/footer.png") no-repeat;
+	background-size: cover;
 	height: 40px;
 	width: 40px;
 }
 .footer a .img-skype {
 	background-position: 0px 0px;
 }
-.footer a:first-child:hover .footer-img {
-	background-position: -200px 0px;
-}
-.footer a[href^="skype"]:active .footer-img {
-	background-position: -400px 0px;
-}
 .footer a .img-email {
 	background-position: -40px 0px;
-}
-.footer a:nth-child(2n):hover .footer-img {
-	background-position: -240px 0px;
-}
-.footer a[href^="mailto"]:active .footer-img {
-	background-position: -440px -0px;
 }
 .footer a .img-github {
 	background-position: -80px 0px;
 }
-.footer a:nth-child(3n):hover .footer-img {
-	background-position: -280px -0px;
-}
-.footer a[href^="https://github"]:active .footer-img {
-	background-position: -480px -0px;
-}
 .footer a .img-vkontakte {
 	background-position: -120px 0px;
 }
-.footer a:nth-child(4n):hover .footer-img {
-	background-position: -320px 0px;
-}
-.footer a[href^="https://vk"]:active .footer-img {
-	background-position: -520px 0px;
-}
 .footer a .img-copyright {
 	background-position: -160px 0px;
-}
-.footer a:last-child:hover .footer-img {
-	background-position: -360px 0px;
-}
-.footer a:last-child:active .footer-img {
-	background-position: -560px 0px;
-}
-.footer a:link {
-	color: #60d0d4;
-}
-.footer a:visited {
-	color: #60d0d4;
-}
-.footer a:hover {
-	color: #d1c926;
-}
-.footer a:active {
-	color: #4f4f4d;
 }
 .clearfix::after {
 	clear: both;
