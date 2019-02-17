@@ -144,6 +144,7 @@ img {
 	border: 0px;
 	color: white;
 	display: table-cell;
+	padding: 10px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -161,20 +162,23 @@ img {
 	height: 40px;
 	width: 40px;
 }
-.footer a .img-skype {
+.footer a .img-github {
 	background-position: 0px 0px;
 }
-.footer a .img-email {
+.footer a .img-gmail {
 	background-position: -40px 0px;
 }
-.footer a .img-github {
+.footer a .img-linkedin {
 	background-position: -80px 0px;
 }
-.footer a .img-vkontakte {
+.footer a .img-skype {
 	background-position: -120px 0px;
 }
-.footer a .img-copyright {
+.footer a .img-vkontakte {
 	background-position: -160px 0px;
+}
+.footer a .img-copyright {
+	background-position: -200px 0px;
 }
 .clearfix::after {
 	clear: both;
