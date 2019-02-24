@@ -1,0 +1,11 @@
+<div class="exp-left">
+	<img ng-src="{{info.img}}" width="350" alt="{{info.name|uppercase}}">
+	<div ng-bind-html="info.last"></div>
+	<div>Занимаемая должность:<br><u>{{info.current}}</u></div>
+	<div>Опыт: с {{info.startDate|date:"MM.yyyy"}} по {{info.endDate == "" ? "настоящее время" : info.endDate|date:"MM.yyyy"}}</div>
+	<div ng-controller="expController">{{expCount(info.startDate, info.endDate)}}</div>
+</div>
+<div class="exp-right">
+	<span ng-bind-html="info.desc"></span>
+</div>
+<div ng-bind-html="info.hr"></div>
