@@ -39,7 +39,7 @@ app.controller("expController", ["$scope", function($scope) {
 		{
 			img: "imgs/cmx.png",
 			name: "cinimex",
-			last: "<div><s>Младший специалист по разработке</s></div><div><s>Младший разработчик</s></div>",
+			last: "<div><s>Младший разработчик</s></div><div><s>Младший специалист по разработке</s></div>",
 			current: "Разработчик",
 			startDate: new Date(2017, 7, 4),
 			endDate: "",
