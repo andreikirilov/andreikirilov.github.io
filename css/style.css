@@ -1,196 +1,185 @@
 @font-face {
-	font-family: "droidserif";
-	src: url("fonts/droidserif.eot");
-	src: url("fonts/droidserif.eot") format("embedded-opentype"),
-		 url("fonts/droidserif.woff2") format("woff2"),
-		 url("fonts/droidserif.woff") format("woff"),
-		 url("fonts/droidserif.ttf") format("truetype"),
-		 url("fonts/droidserif.svg#droidserif") format("svg");
+    font-family: "droidserif";
+    src: url("font/droidserif.eot");
+    src: url("font/droidserif.eot") format("embedded-opentype"),
+        url("font/droidserif.ttf") format("truetype"),
+        url("font/droidserif.svg#droidserif") format("svg"),
+        url("font/dridserif.woff") format("woff"),
+        url("font/droidserif.woff2") format("woff2");
 }
 html {
-	margin-left: calc(100vw - 100%);
+    margin-left: calc(100vw - 100%);
 }
 body {
-	background-color: #eae4e4;
-	color: #4f4f4d;
-	font-family: droidserif, sans-serif;
+    background-color: #eae4e4;
+    color: #4f4f4d;
+    font-family: droidserif, sans-serif;
 }
 a {
-	cursor: pointer;
-	text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 a:link {
-	color: #4f4f4d;
+    color: #4f4f4d;
 }
 a:visited {
-	color: #4f4f4d;
+    color: #4f4f4d;
 }
 a:hover {
-	border-bottom: 2px #e83555 solid;
-	color: #e83555;
-	opacity: 0.8;
+    border-bottom: 2px #e83555 solid;
+    color: #e83555;
+    opacity: 0.8;
 }
 a:active {
-	color: #e83555;
-	opacity: 0.4;
+    color: #e83555;
+    opacity: 0.4;
 }
 .head-container {
-	margin: 100px auto 0px auto;
-	width: 1000px;
+    margin: 100px auto 0px auto;
+    width: 1000px;
 }
 .head-left {
-	#background-color: lightgrey;
-	box-sizing: border-box;
-	float: left;
-	font-size: 0.9em;
-	font-weight: bold;
-	height: 90px;
-	width: 36%;
+    box-sizing: border-box;
+    float: left;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 90px;
+    width: 36%;
 }
 .head-left h1 {
-	font-size: 2.8em;
-	margin: 10px 0px 10px 0px;
+    font-size: 2.8em;
+    margin: 10px 0px 10px 0px;
 }
 .head-right {
-	#background-color: lightblue;
-	box-sizing: border-box;
-	float: left;
-	font-size: 1.2em;
-	font-weight: bold;
-	height: 90px;
-	padding: 64px 0px 0px 30px;
-	width: 64%;
+    box-sizing: border-box;
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 90px;
+    padding: 64px 0px 0px 30px;
+    width: 64%;
 }
 .head-right a {
-	display: inline;
-	margin-right: 36px;
+    display: inline;
+    margin-right: 36px;
 }
 .head-right .a-current {
-	color: #e83555;
+    color: #e83555;
 }
 .content-container {
-	line-height: 2.5em;
-	margin: 0px auto;
-	min-height: 400px;
-	position: relative;
-	transition: height 0.75s;
-	width: 1000px;
+    line-height: 2.5em;
+    margin: 0px auto;
+    min-height: 400px;
+    position: relative;
+    transition: height 0.75s;
+    width: 1000px;
 }
 .main-container,
 .exp-container,
 .about-container,
 .contacts-container {
-	display: none;
-	opacity: 0;
-	position: absolute;
-	transition: opacity 1.25s;
-	visibility: hidden;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1.25s;
+    visibility: hidden;
 }
 .main-container {
-	display: inline;
-	height: 400px;
-	opacity: 1;
-	visibility: visible;
+    display: inline;
+    height: 400px;
+    opacity: 1;
+    visibility: visible;
 }
 .main-left,
 .exp-left {
-	#background-color: lightblue;
-	filter: grayscale(100%);
-	box-sizing: border-box;
-	float: left;
-	padding: 30px 0px 0px 0px;
-	width: 36%;
+    filter: grayscale(100%);
+    box-sizing: border-box;
+    float: left;
+    padding: 30px 0px 0px 0px;
+    width: 36%;
 }
 .main-left img {
-	border-radius: 50%;
+    border-radius: 50%;
 }
 .about-one,
 .contacts-one {
-	padding: 30px 0px 0px 0px;
-	text-align: justify;
+    padding: 30px 0px 0px 0px;
+    text-align: justify;
 }
 .about-one {
-	text-indent: 3em;
+    text-indent: 3em;
 }
 .about-one a {
-	font-weight: bold;
+    font-weight: bold;
 }
 .main-right,
 .exp-right {
-	#background-color: lightgrey;
-	box-sizing: border-box;
-	float: left;
-	padding: 10px 0px 0px 30px;
-	text-align: justify;
-	width: 64%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px 0px 0px 30px;
+    text-align: justify;
+    width: 64%;
 }
 .main-right h1 {
-	font-size: 5.42em;
-	margin: 30px 0px 30px 0px;
+    font-size: 5.42em;
+    margin: 30px 0px 30px 0px;
 }
 .exp-right h1 {
-	font-size: 2.25em;
-	margin: 20px 0px 20px 0px;
-	text-align: left;
+    font-size: 2.25em;
+    margin: 20px 0px 20px 0px;
+    text-align: left;
 }
 .footer {
-	background-color:#e83555;
-	border-radius: 0px 0px 25px 25px;
-	color: white;
-	display: table;
-	height: 60px;
-	margin: 0px auto 100px auto;
-	width: 1000px;
+    background-color:#e83555;
+    border-radius: 0px 0px 25px 25px;
+    color: white;
+    display: table;
+    height: 60px;
+    margin: 0px auto 100px auto;
+    width: 1000px;
 }
 .footer a {
-	#border: 1px solid black;
-	border: 0px;
-	color: white;
-	display: table-cell;
-	padding: 10px;
-	text-align: center;
-	vertical-align: middle;
+    border: 0px;
+    color: white;
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
 }
 .footer a:hover div:nth-child(2n){
-	border-bottom: 2px white solid;
-	margin-bottom: -2px;
+    border-bottom: 2px white solid;
+    margin-bottom: -2px;
 }
 .footer a div {
-	display: inline-block;
-	vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 .footer a .footer-img {
-	background: url("../imgs/footer.png") no-repeat;
-	background-size: cover;
-	height: 40px;
-	width: 40px;
+    background: url("../img/footer.png") no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
 }
 .footer a .img-github {
-	background-position: 0px 0px;
+    background-position: 0px 0px;
 }
 .footer a .img-gmail {
-	background-position: -40px 0px;
+    background-position: -40px 0px;
 }
 .footer a .img-linkedin {
-	background-position: -80px 0px;
+    background-position: -80px 0px;
 }
 .footer a .img-skype {
-	background-position: -120px 0px;
+    background-position: -120px 0px;
 }
 .footer a .img-vkontakte {
-	background-position: -160px 0px;
+    background-position: -160px 0px;
 }
 .footer a .img-copyright {
-	background-position: -200px 0px;
+    background-position: -200px 0px;
 }
 .clearfix::after {
-	clear: both;
-	content: "";
-	display: table;
+    clear: both;
+    content: "";
+    display: table;
 }
-/*
-grey:   #4f4f4d
-red:    #e83555
-blue:   #60d0d4
-yellow: #d1c926
-*/

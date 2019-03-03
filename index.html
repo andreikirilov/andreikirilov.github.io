@@ -1,83 +1,83 @@
 <!DOCTYPE HTML>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>Андрей Кирилов - разработчик IBM Integration Bus/Websphere MQ</title>
-		<meta name="description" content="Первый одностраничный сайт-визитка разработчика Андрея Кирилова">
-		<meta name="keywords" content="Андрей, Кирилов, разработчик">
-		<meta name="viewport" content="width=device-width">
-		<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/vendors/angular.min.js"></script>
-		<script src="js/vendors/angular-sanitize.min.js"></script>
-	</head>
-	<body ng-app="experience">
-		<div class="head-container clearfix">
-			<div class="head-left">
-				<h1>Андрей Кирилов</h1>
-				<span>Разработчик IBM Integration Bus/Websphere MQ</span>
-			</div>
-			<div class="head-right">
-				<a id="main" class="a-current">ГЛАВНАЯ</a>
-				<a id="exp">ОПЫТ РАБОТЫ</a>
-				<a id="about">ОБО МНЕ</a>
-				<a id="contacts">КОНТАКТЫ</a>
-			</div>
-		</div>
-		<div class="content-container clearfix">
-			<div class="main-container">
-				<div class="main-left">
-					<img src="imgs/avatar.jpg" width="350" alt="Андрей Кирилов" title="Бориславов">
-				</div>
-				<div class="main-right">
-					<h1>Всем привет</h1>
-					<span>... и добро пожаловать на мой первый одностраничный сайт-визитку. Немного обо мне: я разработчик интеграционных решений, работаю второй год. За это время мне удалось достичь хороших результатов. В&nbsp;свободное от работы время стараюсь развиваться в интересных мне направлениях: после разработки четырех приложений на Android и 2D игры на C# дошли руки до WEB-программирования. Эта страница использует технологии HTML, CSS, JavaScript и AngularJS.</span>
-				</div>
-			</div>
-			<div class="exp-container" ng-controller="expController">
-				<exp-container ng-repeat="exp in exps" info="exp"></exp-container>
-			</div>
-			<div class="about-container">
-				<div class="about-one">
-					<p>В 2014 году завершил обучение в <a href="http://cchgeu.ru" target="_blank" title="cchgeu.ru">Воронежском Государственном Техническом Университете</a> по специальности &laquo;Электропривод&raquo;, но через пару лет работы по специальности понял, что занимаюсь не своим делом. "Уволился&nbsp;в&nbsp;никуда", потому что твердо решил, что моя работа, как и жизнь в целом, должна в первую очередь быть интересной. Еще в школе мне очень нравились уроки информатики, поэтому после основной работы я решил вернуться к истокам и начал проходить бесплатные курсы <a href="https://javarush.ru/?jr_ref=1346418" target="_blank" title="javarush.ru">JavaRush</a>. Задачей было пройти все <a href="https://javarush.ru/users/1346418" target="_blank" title="javarush.ru">40 уровней</a> за месяц, а после заняться <a href="https://voronezh.hh.ru/resume/96a1c39cff02e83fdd0039ed1f6f71697a6334" target="_blank" title="hh.ru">поисками работы</a>. Мое первое собеседование проводила московская компания <a href="https://www.cinimex.ru" target="_blank" title="cinimex.ru">&laquo;Синимекс&raquo;</a>. После успешного прохождения которого мне предложили начать с должности &laquo;младшего специалиста по разработке&raquo.</p>
-					<p>О себе добавлю следующее: стараюсь изучить, перенять опыт старших коллег. Способен быстро влиться в проект, разобраться в проблеме. Как я уже писал, в свободное время занимаюсь совершенствованием навыков программирования, например: Android, C#, Unity3D, Spring, Hibernate. Пришло время HTML, CSS, JavaSript. Разобраться с ними мне помогли пару недель в <a href="https://htmlacademy.ru/?ref=902947" target="_blank" title="htmlacademy.ru">HTML Academy</a>. Далее подключил AngularJS v1.7.7, обучение прошел на <a href="https://www.codecademy.com/learn/learn-angularjs" target="_blank" title="codecademy.com">Codecademy</a>. Спасибо за то, что посетили мой сайт!</p>
-				</div>
-			</div>
-			<div class="contacts-container">
-				<div class="contacts-one">
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A063a37c4bd2579be2cf6d41db9b84364bb8809178d22866f5f81edc0ab7c1510&amp;width=1000&amp;height=570&amp;lang=ru_RU&amp;scroll=false"></script>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<a href="https://github.com/andreikirilov" target="_blank">
-				<div class="footer-img img-github"></div>
-				<div>GitHub</div>
-			</a>
-			<a href="mailto:andrei7even@gmail.com" target="_blank">
-				<div class="footer-img img-gmail"></div>
-				<div>Gmail</div>
-			</a>
-			<a href="https://www.linkedin.com/in/ankirilov/" target="_blank">
-				<div class="footer-img img-linkedin"></div>
-				<div>LinkedIn</div>
-			</a>
-			<a href="skype:statuskia?chat" target="_blank">
-				<div class="footer-img img-skype"></div>
-				<div>Skype</div>
-			</a>
-			<a href="https://vk.com/ankirilov" target="_blank" class="footer-vkontakte">
-				<div class="footer-img img-vkontakte"></div>
-				<div>ВКонтакте</div>
-			</a>
-			<a class="footer-copyright">
-				<div class="footer-img img-copyright" target="_blank"></div>
-				<div>Сайт создан в 2018 году<br>&copy; Андреем Кириловым</div>
-			</a>
-		</div>
-		<script src="js/app.js"></script>
-		<script src="js/controllers/expController.js"></script>
-		<script src="js/directives/expContainer.js"></script>
-		<script src="js/script.js"></script>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Андрей Кирилов - разработчик IBM Integration Bus/Websphere MQ</title>
+        <meta name="description" content="Первый одностраничный сайт-визитка разработчика Андрея Кирилова">
+        <meta name="keywords" content="Андрей, Кирилов, разработчик">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/angular.min.js"></script>
+        <script src="js/vendor/angular-sanitize.min.js"></script>
+    </head>
+    <body ng-app="experience">
+        <div class="head-container clearfix">
+            <div class="head-left">
+                <h1>Андрей Кирилов</h1>
+                <span>Разработчик IBM Integration Bus/Websphere MQ</span>
+            </div>
+            <div class="head-right">
+                <a id="main" class="a-current">ГЛАВНАЯ</a>
+                <a id="exp">ОПЫТ РАБОТЫ</a>
+                <a id="about">ОБО МНЕ</a>
+                <a id="contacts">КОНТАКТЫ</a>
+            </div>
+        </div>
+        <div class="content-container clearfix">
+            <div class="main-container">
+                <div class="main-left">
+                    <img src="img/avatar.jpg" width="350" alt="Андрей Кирилов" title="Бориславов">
+                </div>
+                <div class="main-right">
+                    <h1>Всем привет</h1>
+                    <span>... и добро пожаловать на мой первый одностраничный сайт-визитку. Немного обо мне: я разработчик интеграционных решений, работаю второй год. За это время мне удалось достичь хороших результатов. В&nbsp;свободное от работы время стараюсь развиваться в интересных мне направлениях: после разработки четырех приложений на Android и 2D игры на C# дошли руки до WEB-программирования. Эта страница использует технологии HTML, CSS, JavaScript и AngularJS.</span>
+                </div>
+            </div>
+            <div class="exp-container" ng-controller="expController">
+                <exp-container ng-repeat="exp in exps" info="exp"></exp-container>
+            </div>
+            <div class="about-container">
+                <div class="about-one">
+                    <p>В 2014 году завершил обучение в <a href="http://cchgeu.ru" target="_blank" title="cchgeu.ru">Воронежском Государственном Техническом Университете</a> по специальности &laquo;Электропривод&raquo;, но через пару лет работы по специальности понял, что занимаюсь не своим делом. &laquo;Уволился&nbsp;в&nbsp;никуда&raquo;, потому что твердо решил, что моя работа, как и жизнь в целом, должна в первую очередь быть интересной. Еще в школе мне очень нравились уроки информатики, поэтому после основной работы я решил вернуться к истокам и начал проходить бесплатные курсы <a href="https://javarush.ru/?jr_ref=1346418" target="_blank" title="javarush.ru">JavaRush</a>. Задачей было пройти все <a href="https://javarush.ru/users/1346418" target="_blank" title="javarush.ru">40 уровней</a> за месяц, а после заняться <a href="https://voronezh.hh.ru/resume/96a1c39cff02e83fdd0039ed1f6f71697a6334" target="_blank" title="hh.ru">поисками работы</a>. Мое первое собеседование проводила московская компания <a href="https://www.cinimex.ru" target="_blank" title="cinimex.ru">&laquo;Синимекс&raquo;</a>. После успешного прохождения которого мне предложили начать с должности &laquo;младшего специалиста по разработке&raquo;.</p>
+                    <p>О себе добавлю следующее: стараюсь изучить, перенять опыт старших коллег. Способен быстро влиться в проект, разобраться в проблеме. Как я уже писал, в свободное время занимаюсь совершенствованием навыков программирования, например: Android, C#, Unity3D, Spring, Hibernate. Пришло время HTML, CSS, JavaSript. Разобраться с ними мне помогли пару недель в <a href="https://htmlacademy.ru/?ref=902947" target="_blank" title="htmlacademy.ru">HTML Academy</a>. Далее подключил AngularJS v1.7.7, обучение прошел на <a href="https://www.codecademy.com/learn/learn-angularjs" target="_blank" title="codecademy.com">Codecademy</a>. Спасибо за то, что посетили мой сайт!</p>
+                </div>
+            </div>
+            <div class="contacts-container">
+                <div class="contacts-one">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A063a37c4bd2579be2cf6d41db9b84364bb8809178d22866f5f81edc0ab7c1510&amp;width=1000&amp;height=570&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://github.com/andreikirilov" target="_blank">
+                <div class="footer-img img-github"></div>
+                <div>GitHub</div>
+            </a>
+            <a href="mailto:andrei7even@gmail.com" target="_blank">
+                <div class="footer-img img-gmail"></div>
+                <div>Gmail</div>
+            </a>
+            <a href="https://www.linkedin.com/in/ankirilov/" target="_blank">
+                <div class="footer-img img-linkedin"></div>
+                <div>LinkedIn</div>
+            </a>
+            <a href="skype:statuskia?chat" target="_blank">
+                <div class="footer-img img-skype"></div>
+                <div>Skype</div>
+            </a>
+            <a href="https://vk.com/ankirilov" target="_blank">
+                <div class="footer-img img-vkontakte"></div>
+                <div>ВКонтакте</div>
+            </a>
+            <a class="footer-copyright">
+                <div class="footer-img img-copyright"></div>
+                <div>Сайт создан в 2018 году<br>&copy; Андреем Кириловым</div>
+            </a>
+        </div>
+        <script src="js/app.js"></script>
+        <script src="js/controller/expController.js"></script>
+        <script src="js/directive/expContainer.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
