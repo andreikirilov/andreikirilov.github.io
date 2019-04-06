@@ -14,7 +14,7 @@
     <body ng-app="experience">
         <div class="head-container clearfix">
             <div class="head-left">
-                <h1>Андрей Кирилов</h1>
+                <h1><a href="/">Андрей Кирилов</a></h1>
                 <span>Разработчик IBM Integration Bus/Websphere MQ</span>
             </div>
             <div class="head-right">
@@ -22,6 +22,8 @@
                 <a id="exp">ОПЫТ РАБОТЫ</a>
                 <a id="about">ОБО МНЕ</a>
                 <a id="contacts">КОНТАКТЫ</a>
+                <a id="skills">СКИЛЫ</a>
+                <a id="certs">СЕРТИФИКАТЫ</a>
             </div>
         </div>
         <div class="content-container clearfix">
@@ -31,7 +33,7 @@
                 </div>
                 <div class="main-right">
                     <h1>Всем привет</h1>
-                    <span>... и добро пожаловать на мой первый одностраничный сайт-визитку. Немного обо мне: я разработчик интеграционных решений, работаю второй год. За это время мне удалось достичь хороших результатов. В&nbsp;свободное от работы время стараюсь развиваться в интересных мне направлениях: после разработки четырех приложений на Android и 2D игры на C# дошли руки до WEB-программирования. Эта страница использует технологии HTML, CSS, JavaScript и AngularJS.</span>
+                    <span>... и добро пожаловать на мой первый одностраничный сайт-визитку. Немного обо мне: я сертифицированный разработчик интеграционных решений, работаю второй год. За это время мне удалось достичь хороших результатов. В&nbsp;свободное от работы время стараюсь развиваться в интересных мне направлениях: после разработки четырех приложений на Android и 2D игры на C# дошли руки до WEB-программирования. Эта страница использует технологии HTML, CSS, JavaScript и AngularJS.</span>
                 </div>
             </div>
             <div class="exp-container" ng-controller="expController">
@@ -40,12 +42,44 @@
             <div class="about-container">
                 <div class="about-one">
                     <p>В 2014 году завершил обучение в <a href="http://cchgeu.ru" target="_blank" title="cchgeu.ru">Воронежском Государственном Техническом Университете</a> по специальности &laquo;Электропривод&raquo;, но через пару лет работы по специальности понял, что занимаюсь не своим делом. &laquo;Уволился&nbsp;в&nbsp;никуда&raquo;, потому что твердо решил, что моя работа, как и жизнь в целом, должна в первую очередь быть интересной. Еще в школе мне очень нравились уроки информатики, поэтому после основной работы я решил вернуться к истокам и начал проходить бесплатные курсы <a href="https://javarush.ru/?jr_ref=1346418" target="_blank" title="javarush.ru">JavaRush</a>. Задачей было пройти все <a href="https://javarush.ru/users/1346418" target="_blank" title="javarush.ru">40 уровней</a> за месяц, а после заняться <a href="https://voronezh.hh.ru/resume/96a1c39cff02e83fdd0039ed1f6f71697a6334" target="_blank" title="hh.ru">поисками работы</a>. Мое первое собеседование проводила московская компания <a href="https://www.cinimex.ru" target="_blank" title="cinimex.ru">&laquo;Синимекс&raquo;</a>. После успешного прохождения которого мне предложили начать с должности &laquo;младшего специалиста по разработке&raquo;.</p>
-                    <p>О себе добавлю следующее: стараюсь изучить, перенять опыт старших коллег. Способен быстро влиться в проект, разобраться в проблеме. Как я уже писал, в свободное время занимаюсь совершенствованием навыков программирования, например: Android, C#, Unity3D, Spring, Hibernate. Пришло время HTML, CSS, JavaSript. Разобраться с ними мне помогли пару недель в <a href="https://htmlacademy.ru/?ref=902947" target="_blank" title="htmlacademy.ru">HTML Academy</a>. Далее подключил AngularJS v1.7.7, обучение прошел на <a href="https://www.codecademy.com/learn/learn-angularjs" target="_blank" title="codecademy.com">Codecademy</a>. Спасибо за то, что посетили мой сайт!</p>
+                    <p>О себе добавлю следующее: стараюсь изучить, перенять опыт старших коллег. Способен быстро влиться в проект, разобраться в проблеме. Как я уже писал, в свободное время занимаюсь совершенствованием навыков программирования, например: Android, C#, Unity3D, Spring, Hibernate. Пришло время HTML, CSS, JavaSript для написания статического сайта-визитки. Разобраться с ними мне помогли пару недель в <a href="https://htmlacademy.ru/?ref=902947" target="_blank" title="htmlacademy.ru">HTML Academy</a>. Далее подключил AngularJS, обучение прошел на <a href="https://www.codecademy.com/learn/learn-angularjs" target="_blank" title="codecademy.com">Codecademy</a>. Из последнего: написал интернет-магазин на PHP по паттерну MVC. По этой теме рекомендую <a href="https://php-start.com/" target="_blank" title="php-start.com">PHP-Start</a>. Спасибо за то, что посетили мой сайт!</p>
                 </div>
             </div>
             <div class="contacts-container">
                 <div class="contacts-one">
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A063a37c4bd2579be2cf6d41db9b84364bb8809178d22866f5f81edc0ab7c1510&amp;width=1000&amp;height=570&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-one">
+                    <ul>
+                        <li>Саморазвитие
+                            <ul>
+                                <li>Unity3D, C#</li>
+                                <li>Android, Spring, Hibernate</li>
+                                <li>MySQL, Oracle SQL, PostgreSQL</li>
+                                <li>PHP, Yii 2, WAMP, LAMP, Apache</li>
+                                <li>HTML, CSS, JavaSript, AngularJS, AJAX</li>
+                            </ul>
+                        </li>
+                        <li>Рабочий процесс
+                            <ul>
+                                <li>IBM Integration Bus, IBM WebSphere MQ</li>
+                                <li>DFDL, JSON, REST, SOAP, XML, XSD, XSLT</li>
+                                <li>ESQL, Java, Groovy, Gradle, PL/SQL (Oracle)</li>
+                                <li>СКАД «Сигнатура», СКЗИ «Янтарь», АРМ КБР-Н</li>
+                                <li>JUnit, SoapUI, Test Automation, Cinimex Test Toolkit</li>
+                                <li>IBM DataPower Gateway, WebSphere Application Server</li>
+                                <li>CI/CD, Jenkins, Jira, Git, SonarQube, TeamCity, Unix (RHEL)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="certs-container">
+                <div class="certs-one">
+                    <img src="img/cert/c9530-001.jpg" width="1000" alt="IBM Certified Solution Developer - Integration Bus v10.0" title="IBM Certified Solution Developer - Integration Bus v10.0">
+                    <img src="img/cert/intermediate.jpg" width="1000" alt="Английский Комментарий - B1 (Intermediate)" title="Английский Комментарий - B1 (Intermediate)">
                 </div>
             </div>
         </div>
