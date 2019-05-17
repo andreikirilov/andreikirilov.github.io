@@ -39,8 +39,8 @@ app.controller("expController", ["$scope", function ($scope) {
             {
                 img: "img/comp/cmx.png",
                 name: "cinimex",
-                last: "<div><s>Младший разработчик</s></div><div><s>Младший специалист по разработке</s></div>",
-                current: "Разработчик",
+                last: "<div><s>Разработчик</s></div><div><s>Младший разработчик</s></div><div><s>Младший специалист по разработке</s></div>",
+                current: "Старший разработчик",
                 startDate: new Date(2017, 7, 4),
                 endDate: "",
                 desc: "<h1><a href=\"https://www.cinimex.ru\" target=\"_blank\" title=\"cinimex.ru\">АО Синимекс-Информатика</a></h1>Компания &laquo;Синимекс&raquo; специализируется на проектировании архитектуры интеграционных решений, разработке заказных решений, внедрении собственных разработок и тестировании профильного ПО в банковском секторе (мой опыт в Россельхозбанке, Банке ВТБ, Почта Банке, Росбанке).<br>Текущие задачи:<br>- IBM Integration Bus<br>- IBM WebSphere MQ<br>- IBM DataPower Gateway<br>- WebSphere Application Server<br>- DFDL, JSON, REST, SOAP, XML, XSD, XSLT<br>- ESQL, Java, Groovy, Gradle, PL/SQL (Oracle)<br>- СКАД &laquo;Сигнатура&raquo;, СКЗИ &laquo;Янтарь&raquo;, АРМ КБР-Н<br>- JUnit, SoapUI, Test Automation, Cinimex Test Toolkit<br>- CI/CD, Jenkins, Jira, Git, SonarQube, TeamCity, Unix (RHEL)",
